@@ -5,7 +5,7 @@ import { PokemonsContainer } from './containers/PokemonsContainer';
 
 function App() {
   const client = new ApolloClient({ //instanciei ApolloClient na variável client
-    uri: 'https://graphql-pokemon.sh' //pra onde quero fazer a requisição
+    uri: 'https://graphql-pokemon2.vercel.app/' //pra onde quero fazer a requisição
   });
 
   return (
