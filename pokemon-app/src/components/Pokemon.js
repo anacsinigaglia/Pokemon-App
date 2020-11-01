@@ -18,12 +18,13 @@ export function Pokemon({ pokemon }) {
       </div>
 
       <div className="pokemon-attacks">
-          {pokemon 
-          && pokemon.attacks 
-          && pokemon.attacks.special 
+          {pokemon //existe?
+          && pokemon.attacks //existe?
+          && pokemon.attacks.special //existe?
           .slice(0, 3).map(attack => (
               <span key={`${attack.name}-${attack.damage}`}>{attack.name}</span> //uso outra key pq o id já estamos usando em outro lugar
-          ))}
+          ))} 
+          {/* slice() retorna cópia de parte de um array (início, fim opcional) */}
       </div>
 
     </div>
